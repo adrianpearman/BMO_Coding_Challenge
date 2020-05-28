@@ -1,0 +1,14 @@
+{
+  "name": "BMO_Coding_Challenge3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adrianpearman/BMO_Coding_Challenge.git",
+  "author": "Adrian Pearman <adrianpearman12@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
