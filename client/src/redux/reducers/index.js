@@ -2,9 +2,9 @@
 import { combineReducers } from "redux";
 // Reducers
 import { restaurantReducer } from "./restaurantReducer";
-import { uiReducer } from "./uiReducer.js";
+import { uiReducer } from "./uiReducer";
 
 export default combineReducers({
-  restatuarantState: restaurantReducer,
+  restaurantState: restaurantReducer,
   uiState: uiReducer,
 });
