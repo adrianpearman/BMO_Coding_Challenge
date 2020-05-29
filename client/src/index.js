@@ -1,7 +1,8 @@
-//NPM modules
+//NPM Modules
 import React from "react";
 import ReactDOM from "react-dom";
 // COMPONENTS
+import "./assets/styles/styles.scss";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 

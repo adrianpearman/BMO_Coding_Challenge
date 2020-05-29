@@ -1,0 +1,31 @@
+.text-center {
+  text-align: center;
+}
+
+.button {
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid;
+  font-size: 1rem;
+
+  &-primary {
+    background: $black;
+    color: $white;
+    border: 1px solid $white;
+
+    &:disabled {
+      background: $blackDisabled;
+      cursor: not-allowed !important;
+    }
+  }
+}
+
+.refine-search {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.full-width {
+  width: 100%;
+}

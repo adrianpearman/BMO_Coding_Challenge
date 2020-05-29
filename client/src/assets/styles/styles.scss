@@ -1,0 +1,9 @@
+//BASE STYLING
+@import "./base/reset";
+@import "./base/settings";
+@import "./base//grid";
+@import "./base/reusable";
+
+// COMPONENTS
+@import "./components/displayResults";
+@import "./components/formInput";
