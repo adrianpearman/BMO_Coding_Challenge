@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/adrianpearman/.nvm/versions/node/v10.17.0/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js add rreux-thunk
+  /Users/adrianpearman/.nvm/versions/node/v10.17.0/bin/node /usr/local/Cellar/yarn/1.19.1/libexec/bin/yarn.js run install:frontend
 
 PATH: 
   /Users/adrianpearman/.nvm/versions/node/v10.17.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,17 +14,17 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/rreux-thunk: Not found
-      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:66926:18)
-      at Request.self.callback (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:140564:22)
-      at Request.emit (events.js:198:13)
-      at Request.<anonymous> (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:141536:10)
-      at Request.emit (events.js:198:13)
-      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:141458:12)
-      at Object.onceWrapper (events.js:286:20)
-      at IncomingMessage.emit (events.js:203:15)
-      at endReadableNT (_stream_readable.js:1143:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  Invariant Violation: Script must exist
+      at invariant (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:2314:15)
+      at /usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:62365:11
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:322:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:5301:28)
+      at /usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:301:12
+      at realRunCommand (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:62437:23)
+      at action.action (/usr/local/Cellar/yarn/1.19.1/libexec/lib/cli.js:62498:16)
 
 npm manifest: 
   {
@@ -35,11 +35,13 @@ npm manifest:
     "author": "Adrian Pearman <adrianpearman12@gmail.com>",
     "license": "MIT",
     "scripts": {
-      "start": "node backend/server.js"
+      "start": "node backend/server.js",
+      "install:frontend": "cd client && yarn install",
+      "install:frontend": "",
+      "install:packages": ""
     },
     "dependencies": {
-      "express": "^4.17.1",
-      "react-redux": "^7.2.0"
+      "express": "^4.17.1"
     }
   }
 
@@ -394,6 +396,11 @@ Lockfile:
       loose-envify "^1.4.0"
       prop-types "^15.7.2"
       react-is "^16.9.0"
+  
+  redux-thunk@^2.3.0:
+    version "2.3.0"
+    resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+    integrity sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==
   
   regenerator-runtime@^0.13.4:
     version "0.13.5"
