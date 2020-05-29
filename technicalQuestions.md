@@ -17,8 +17,8 @@
 2. JS Optional Chaining. It allows you to call a nested object value that may not be defined yet.
    E.g
    const user = {}
-   let list = user.groceries.list ~ this will through an error
-   let list = user?.groceries?.list? ~ this will not through an error
+   let list = user.groceries.list ~ this will throw an error
+   let list = user?.groceries?.list? ~ this will not throw an error
 3. To track down performance issues in production; for the frontend code, I would firstly utilize the audit tools in the chrome dev tools as it allows for a detailed view of how the content is initially loaded. From that information, I can then look to optimize the loaded assets by either resizing or switching to more efficient datatypes.
 4. To improve the API, I would love to see an option to filter the returned restaurants based on their price rating. According to their documentation, all the search parameters allow for different results to be returned, however, I found the price parameter to not change the returned values.
 5.
